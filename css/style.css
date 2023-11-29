@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap");
-/*font-family: 'Noto Serif Balinese', serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,23 +8,6 @@
   font-family: "Noto Serif Balinese", serif;
 }
 
-/*font-family: 'Noto Serif Balinese', serif;*/
-/*.lista {
-  background-color: rgb(221, 221, 221);
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px 0;
-}*/
-/*.navbar-nav{
-  float: left; 
-  margin: 0;
-  left: 50%;
-  transform: translatex(-50%);
-  position: relative;
-}*/
 .navbar {
   background-color: rgb(221, 221, 221) !important;
 }
@@ -38,6 +21,7 @@
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
+
 .lista a:hover {
   background-color: rgb(5, 201, 201);
   padding: 20px 20px;
@@ -73,6 +57,10 @@
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 .margen-secundario {
   background-color: rgb(5, 201, 201);
   padding: 80px;
@@ -101,39 +89,96 @@
   border-radius: 50px;
 }
 
-.container-secundario h2, .container-principal h1 {
+.container-secundario h2,
+.container-principal h1 {
   padding: 20px;
 }
 
 .btn {
   color: rgb(0, 0, 0);
   background-color: rgb(5, 201, 201);
-  margin: 15px;
+  margin: 10px;
 }
+
 .btn:hover {
   color: #fff;
   background-color: rgb(111, 204, 204);
 }
 
-.form {
-  margin: auto;
-  width: 200px;
+.container-sucursales {
+  background-color: rgb(173, 255, 255);
+  margin: 0%;
+  padding-bottom: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-#lomasmap, #lanusmap, #escaladamap {
+.elemento1,
+.elemento2,
+.elemento3 {
+  margin: 0%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#lomasmap,
+#lanusmap,
+#escaladamap {
   text-align: center;
-  padding-bottom: 30px;
+  width: auto;
 }
 
 #helados {
   border-radius: 35px;
 }
 
-#lomasimg, #escaladaimg, #lanusimg {
+#lomasimg,
+#escaladaimg,
+#lanusimg {
+  padding-top: 10px;
   border-radius: 150px;
+  padding-bottom: 15px;
+}
+
+.container-formulario {
+  background-color: rgb(173, 255, 255);
+  margin: 0%;
+  padding-top: 50px !important;
+  padding-bottom: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form label {
+  display: block;
+  padding-left: 0px;
+  text-indent: -9px;
+  width: 100%;
+  padding: 10px;
+}
+
+#botones {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.center,
+#captchaBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #captchaBackground {
+  margin-left: -90px;
   height: auto;
   width: auto;
   background-color: #2d3748;
@@ -153,12 +198,6 @@
   letter-spacing: 3px;
   margin: auto;
   display: block;
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #submitButton {
@@ -213,38 +252,65 @@ footer {
   img {
     width: 54%;
   }
-  #helados, #heladosfondo {
+
+  #helados,
+  #heladosfondo {
     width: 88%;
   }
-  .abs-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+
+  #lomasmap,
+  #lanusmap,
+  #escaladamap {
+    width: 88%;
   }
-  .form {
-    width: 40px;
+
+  .container-formulario {
+    padding-top: 25px;
+    text-align: center;
+    align-items: center;
+  }
+
+  #captchaBackground {
+    margin-left: 3px;
   }
 }
+
 @media (min-width: 992px) {
   img {
     width: auto;
   }
+
   .sociales a {
     color: rgb(0, 0, 0);
     font-size: 100px !important;
     margin: 40px !important;
     align-self: center;
   }
-  #helados, #heladosfondo {
+
+  #helados,
+  #heladosfondo {
+    width: 70%;
+  }
+
+  #lomasmap,
+  #lanusmap,
+  #escaladamap {
     width: 70%;
   }
 }
+
 @media (min-width: 1024px) {
   #heladosfondo {
-    width: 52%;
+    width: 42%;
+  }
+
+  #lomasmap,
+  #lanusmap,
+  #escaladamap {
+    width: 95%;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
